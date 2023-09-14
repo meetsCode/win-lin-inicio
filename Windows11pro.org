@@ -1,0 +1,27 @@
+* Borro todos los enlaces de la venta de inicio o sus programas.
+      Algunos como spotify son enlaces que al pulsarlos van a la tienda de Windows y lo instalan.
+      Otros son realmente programas instalados,
+      Los borro o elimino los enlaces.
+* Me aseguro que el antivirus está instalado y ejecutándose Cómo???????
+* Incorporo el teclado inglés americano
+  - voy a opciones -|X|>teclado->americano
+  - lo puedeo pasar a esp con tecla windows-SPC
+* Instalo un WSL (Windows susbsistem Linux)
+  - docu de https://www.youtube.com/watch?v=f_CC4GZ0UnY para la instalacion del SO
+    	 https://www.youtube.com/watch?v=Do81AMBa0Rk para la app con X
+	 https://youtu.be/_Hne4gm8plo corriendo contenedores docker
+	 El manual oficial de windows es:
+	 https://learn.microsoft.com/es-es/windows/wsl/tutorials/gui-apps
+  - Abro una PowerShell, lo elevo con botón derecho sobre el icono del Dock "Run as Administrator"
+  y ejecuto el script: ```wsl --install``` y reinicio al acabar de instalar.
+  - Vuelvo al PowerShell como administrador e instalo Ubuntu ```wsl --instal -d ubuntu```
+  
+#src_script
+
+wsl --install
+
+#src_end
+
+Instalo tres programas git, emacs , nautilus, octave
+sudo apt-get update
+sugo apt-get upgrade
