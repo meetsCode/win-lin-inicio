@@ -1,0 +1,59 @@
+Aprendo emacs lisp con la lista
+El manual básico de uso de emacs es
+    Presionar Control h t
+    Presionar F1 t
+    Presionar Alt x, escribir help-with-tutorial y presionar Enter
+
+y un excelente resumen de los comandos en español:
+https://www.ochobitshacenunbyte.com/2019/10/29/una-guia-de-referencia-para-emacs/
+
+y si no sé que distro usar https://picandocodigo.net/2020/como-empezar-con-emacs-distribuciones/
+
+
+
+Estoy escribiendo o esto creo
+Instalar el Windows for Linux (WSL) en windows 11
+Ambos de Benjamin Camacho:
+https://www.youtube.com/watch?v=f_CC4GZ0UnY para la instalacion del SO
+https://www.youtube.com/watch?v=Do81AMBa0Rk para la app con X
+
+El manual oficial de windows es:
+https://learn.microsoft.com/es-es/windows/wsl/tutorials/gui-apps
+
+Lo de instalar aplicaciones de windows 11 para todos los usuarios o solo para algunos está documentado
+https://code.visualstudio.com/docs/?dv=win
+Básicamente, si quiero instalar para todos los usuarios la app debe caer en la carpeta " "
+Si quiero que caiga en la de solo un usuario debe caer en la carpeta: ""
+Si instalo para todos pero no aparece en el menú de inicio (El que sale en el icono de la ventana) debo de añadir el enlace a la carpeta " "
+
+La idea de instalar el WSL (windows subsystem for Linux) proviene de que alguine cree que es la mejor manera de instalar y disfrutar de emacs.
+http://ashroe.eu/2019/07/01/windows-spacemacs-install.html
+
+aparte de instalación oficial:
+visualhttps://www.gnu.org/software/emacs/download.html
+
+
+
+INSTALO con un PowerShell ```wsl --install``` y para instalar la distribución ubuntu ```wsl --install -d ubuntu```o debian
+Cuando lo instalo aparece un dir nuevo en /home/Linux/ y dentro cada uno de los Linux que haya instalado.
+Para acceder a la terminal de ubuntu abro un PowerShell y en la pestaña + elijo Ubuntu y ya estoy dentro
+Lo compruebo con los comandos:
+```
+$ pwd
+$ lsb_release -a
+```
+
+o sobre una PowerShell puedo ver el gestor de máquinas virutales
+```
+> wsl --list -v
+  NAME      STATE           VERSION
+* Ubuntu    Running         2
+```
+
+Si tengo una versión 2 puedo usar el entorno gráfico 
+instalo unas cuantas cosillas:
+```
+$ sudo apt-get update
+$ sudo apt-get install nautilus -y
+$ sudo apt-get install octave
+```
